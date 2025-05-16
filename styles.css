@@ -117,7 +117,14 @@ main {
   font-family: 'Brush Script MT', cursive;
   color: #a65c3c;
 }
-
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(166, 92, 60, 0.2);
+  width: auto;
+  height: auto;
+}
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
