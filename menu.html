@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CinnAmora - Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function toggleLanguage() {
+      const html = document.documentElement;
+      if (html.lang === 'en') {
+        html.lang = 'ar';
+        html.dir = 'rtl';
+        document.getElementById('lang-toggle').textContent = 'English';
+        document.getElementById('category-rolls').textContent = 'لفائف القرفة';
+        document.getElementById('category-drinks').textContent = 'المشروبات';
+        document.getElementById('category-offers').textContent = 'العروض';
+        document.getElementById('order-now').textContent = 'اطلب الآن';
+         document.getElementById('nav-home').textContent = 'الرئيسية';
+        document.getElementById('nav-menu').textContent = 'القائمة';
+        document.getElementById('nav-about').textContent = 'من نحن';
+        document.getElementById('nav-contact').textContent = 'تواصل معنا';
+      } else {
+        html.lang = 'en';
+        html.dir = 'ltr';
+        document.getElementById('lang-toggle').textContent = 'العربية';
+        document.getElementById('category-rolls').textContent = 'Cinnamon Rolls';
+        document.getElementById('category-drinks').textContent = 'Drinks';
+        document.getElementById('category-offers').textContent = 'Offers';
+        document.getElementById('order-now').textContent = 'Order Now';
+        document.getElementById('nav-home').textContent = 'Home';
+        document.getElementById('nav-menu').textContent = 'Menu'; 
+        document.getElementById('nav-about').textContent = 'About Us';
+        document.getElementById('nav-contact').textContent = 'Contact';
+      }
+    }
+    function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+     <div class="logo"><a href="index.html">CinnAmora</a></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="menu.html" id="nav-menu" class="active">Menu</a></li>
+        <li><a href="about.html" id="nav-about">About Us</a></li>
+        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+      </ul>
+     <div class="nav-actions">
+      <button id="lang-toggle" onclick="toggleLanguage()">العربية</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+
+
+    <section class="featured category">
+      <h2 id="category-rolls">Cinnamon Rolls</h2>
+      <div class="featured-items">
+        <article class="item">
+          <img src="images\cream-cheese.jpg" alt="Cinnamon Roll" width="95%" height="60%" />
+          <h3>Cinnamon Roll Classic</h3>
+          <p>Soft, warm, and freshly baked cinnamon rolls with cream cheese frosting.</p>
+        </article>
+
+        <article class="item">
+          <img src="images\Chocolate-Cinnamon.jpg" alt="Choco CinnaRoll" width="95%" height="60%" />
+          <h3>Choco CinnaRoll</h3>
+          <p>Cinnamon roll drizzled with rich chocolate sauce and choco chips.</p>
+
+        </article>
+        <article class="item">
+          <img src="images\cinnamon-roll-bites.jpg" alt="Cinnamon Buns" width="95%" height="60%" />
+          <h3>Cinna Bites</h3>
+          <p>Delicious bite-sized cinnamon buns, perfect for sharing or snacking.</p>
+        </article>
+
+        <article class="item">
+          <img src="images\becan.jpeg" alt="Nutty Swirl" width="95%" height="60%" />
+          <h3>Nutty Swirl</h3>
+          <p>	Our signature roll topped with roasted pecans and caramel drizzle.</p>
+        </article>
+
+        <article class="item">
+          <img src="images\caramel.jpeg" alt="Golden Drizzle Deligh" width="95%" height="60%" />
+          <h3>Golden Drizzle Delight</h3>
+          <p>	A caramel-covered cinnamon roll for pure, buttery indulgence.</p>
+        </article>
+
+        <article class="item">
+          <img src="images\choco.jpeg" alt="ChocoCinn Bliss" width="95%" height="60%" />
+          <h3>ChocoCinn Bliss	</h3>
+          <p> Chocolate meets cinnamon in this dreamy, decadent twist.</p>
+        </article>
+
+        <article class="item">
+          <img src="images\vanella.jpeg" alt="Snow-Capped Swirl" width="95%" height="60%" />
+          <h3>Snow-Capped Swirl</h3>
+          <p> Rolled with love and topped with a thick layer of vanilla icing.</p>
+        </article>
+
+        <article class="item">
+          <img src="images\apple.jpeg" alt="Harvest Hug" width="95%" height="60%" />
+          <h3>Harvest Hug</h3>
+          <p>Filled with spiced apples and cinnamon – like autumn in a roll.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured category">
+      <h2 id="category-drinks">Drinks</h2>
+      <div class="featured-items">
+        <article class="item">
+          <img src="images/iced-cinnamon-latte.jpg" alt="Frosted Swirl Brew" width="95%" height="60%" />
+          <h3>Frosted Swirl Brew</h3>
+          <p>Iced coffee sweetened with cinnamon syrup and a touch of cream.</p>
+        </article>
+
+        <article class="item">
+          <img src="images/esspresso.jpeg" alt="CinnaLatte Love" width="95%" height="60%" />
+          <h3>CinnaLatte Love</h3>
+          <p>A cozy blend of espresso, steamed milk, and cinnamon swirl syrup.</p>
+        </article>
+
+        <article class="item">
+          <img src="images/mexican-coffee.jpg" alt="Swirled Cream Rush" width="95%" height="60%" />
+          <h3>Swirled Cream Rush</h3>
+          <p>Espresso - Strong and bold with a touch of cinnamon</p>
+        </article>
+
+        <article class="item">
+          <img src="images/Mocha.jpeg" alt="CocoaCinn Comfort" width="95%" height="60%" />
+          <h3>CocoaCinn Comfort</h3>
+          <p>Mocha - Chocolatey goodness with a cinnamon twist</p>
+        </article>
+
+        <article class="item">
+          <img src="images/milkshake.jpeg" alt="CinnaChill Shake" width="95%" height="60%" />
+          <h3>CinnaChill Shake</h3>
+          <p>A thick cinnamon milkshake crowned with whipped cream and caramel.</p>
+        </article>
+
+        <article class="item">
+          <img src="images/latte.jpeg" alt="Spiced Vanilla Dream" width="95%" height="60%" />
+          <h3>Spiced Vanilla Dream</h3>
+          <p>A dreamy chai latte with cinnamon, vanilla, and frothy milk.</p>
+        </article>
+
+        <article class="item">
+          <img src="images/cappacino.jpeg" alt="Velvet Caramel Swirl" width="95%" height="60%" />
+          <h3>Velvet Caramel Swirl</h3>
+          <p>Creamy caramel cappuccino with a hint of cinnamon warmth.</p>
+        </article>
+
+        <article class="item">
+          <img src="images/butterscotch_latte_recipe.webp" alt="CinnaLatte Love" width="95%" height="60%" />
+          <h3>CinnaLatte Love</h3>
+          <p>A blend of espresso, steamed milk, and cinnamon swirl syrup.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured category">
+      <h2 id="category-offers">Offers</h2>
+      <div class="featured-items">
+        <article class="item">
+          <img src="images/offer01.png" alt="Classic Offer" width="95%" height="60%" />
+          <h3>Classic Offer</h3>
+          <p>Buy 2 Classic Rolls, Get 1 Free</p>
+        </article>
+        <article class="item">
+          <img src="images/offer03.jpg" alt="Drink Free Offer" width="95%" height="60%" />
+          <h3>Drink Free Offer</h3>
+          <p>Free Drink with Every Order Over $20</p>
+        </article>
+        <article class="item">
+          <img src="images/offer-03.webp" alt="Weekend Offer" width="95%" height="60%" />
+          <h3>Weekend Offer</h3>
+          <p>Weekend Special: Cinnamon Roll & Cinna Bites</p>
+        </article>
+
+      </div>
+
+    </section>
+    <a href="https://wa.me/2016720?text=urlencodedtext" target="_blank" rel="noopener" class="order-btn" id="order-now">Order Now</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CinnAmora. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CinnAmora - Cozy Cinnamon Desserts</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Language toggle script
+    function toggleLanguage() {
+      const html = document.documentElement;
+      if (html.lang === 'en') {
+        html.lang = 'ar';
+        html.dir = 'rtl';
+        document.getElementById('lang-toggle').textContent = 'English';
+        // Change text content to Arabic
+        document.getElementById('hero-title').textContent = 'سينامورا - الحلويات الدافئة بالقرفة';
+        document.getElementById('hero-subtitle').textContent = 'استمتع بألذ لفائف القرفة والحلويات الشهية';
+        document.getElementById('order-now').textContent = 'اطلب الآن';
+        document.getElementById('featured-title').textContent = 'منتجات مميزة';
+        document.getElementById('cta-text').textContent = 'جرب أفضل لفائف القرفة لدينا اليوم!';
+        document.getElementById('nav-home').textContent = 'الرئيسية';
+        document.getElementById('nav-menu').textContent = 'القائمة';
+        document.getElementById('nav-about').textContent = 'من نحن';
+        document.getElementById('nav-contact').textContent = 'تواصل معنا';
+      } else {
+        html.lang = 'en';
+        html.dir = 'ltr';
+        document.getElementById('lang-toggle').textContent = 'العربية';
+        // Change text content to English
+        document.getElementById('hero-title').textContent = 'CinnAmora - Cozy Cinnamon Desserts';
+        document.getElementById('hero-subtitle').textContent = 'Enjoy the tastiest cinnamon rolls and sweet treats';
+        document.getElementById('order-now').textContent = 'Order Now';
+        document.getElementById('featured-title').textContent = 'Featured Items';
+        document.getElementById('cta-text').textContent = 'Try our best cinnamon rolls today!';
+
+        document.getElementById('nav-home').textContent = 'Home';
+        document.getElementById('nav-menu').textContent = 'Menu'; 
+        document.getElementById('nav-about').textContent = 'About Us';
+        document.getElementById('nav-contact').textContent = 'Contact';
+      }
+    }
+    function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">CinnAmora</a></div>
+       
+      <ul class="nav-links" id="nav-links">
+        <li ><a href="index.html" id="nav-home">Home</a></li>
+        <li ><a href="menu.html" id="nav-menu">Menu</a></li>
+        <li ><a href="about.html" id="nav-about">About Us</a></li>
+        <li ><a href="contact.html" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+      <button id="lang-toggle" onclick="toggleLanguage()">العربية</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="hero-title">CinnAmora - Cozy Cinnamon Desserts</h1>
+      <p id="hero-subtitle">Enjoy the tastiest cinnamon rolls and sweet treats</p>
+      <a href="https://wa.me/2016720?text=urlencodedtext" target="_blank" rel="noopener" class="order-btn" id="order-now">Order Now</a>
+    </section>
+
+    <section class="featured">
+      <h2 id="featured-title">Featured Items</h2>
+      <div class="featured-items">
+        <article class="item">
+          <img src="images\cream-cheese.jpg" alt="Cinnamon Roll" width="95%" height="80%" />
+          <h3>Cinnamon Roll Classic</h3>
+          <p>Soft, warm, and freshly baked cinnamon rolls with cream cheese frosting.</p>
+        </article>
+        <article class="item">
+          <img src="images\Chocolate-Cinnamon.jpg" alt="Choco CinnaRoll"  width="95%" height="80%"/>
+          <h3>Choco CinnaRoll</h3>
+          <p>Cinnamon roll drizzled with rich chocolate sauce and choco chips.</p>
+          
+
+        </article>
+        <article class="item">
+          <img src="images\cinnamon-roll-bites.jpg" alt="Cinnamon Buns"  width="95%" height="80%"/>
+          <h3>Mini Cinnamon Buns</h3>
+          <p>Delicious bite-sized cinnamon buns, perfect for sharing or snacking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <p id="cta-text">Try our best cinnamon rolls today!</p>
+      <a href="https://wa.me/2016720?text=urlencodedtext" target="_blank" rel="noopener" class="order-btn">Order Now</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CinnAmora. All rights reserved.</p>
+  </footer>
+</body>
+</html>

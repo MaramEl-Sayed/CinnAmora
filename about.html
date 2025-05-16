@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CinnAmora - About Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function toggleLanguage() {
+      const html = document.documentElement;
+      if (html.lang === 'en') {
+        html.lang = 'ar';
+        html.dir = 'rtl';
+        document.getElementById('lang-toggle').textContent = 'English';
+        document.getElementById('brand-story-title').textContent = 'قصة العلامة التجارية';
+        document.getElementById('brand-story-text').textContent = 'سينامورا هي علامة تجارية متخصصة في لفائف القرفة والحلويات الدافئة، تجمع بين النكهات التقليدية واللمسة العصرية لتقديم تجربة فريدة.';
+        document.getElementById('values-title').textContent = 'قيمنا';
+        document.getElementById('value1').textContent = 'جودة عالية في كل منتج';
+        document.getElementById('value2').textContent = 'استخدام مكونات طبيعية وطازجة';
+        document.getElementById('value3').textContent = 'تقديم تجربة دافئة ومريحة للعملاء';
+
+        document.getElementById('nav-home').textContent = 'الرئيسية';
+        document.getElementById('nav-menu').textContent = 'القائمة';
+        document.getElementById('nav-about').textContent = 'من نحن';
+        document.getElementById('nav-contact').textContent = 'تواصل معنا';
+      } else {
+        html.lang = 'en';
+        html.dir = 'ltr';
+        document.getElementById('lang-toggle').textContent = 'العربية';
+        document.getElementById('brand-story-title').textContent = 'Brand Story';
+        document.getElementById('brand-story-text').textContent = 'CinnAmora is a brand specializing in cinnamon rolls and cozy desserts, blending traditional flavors with a modern touch to offer a unique experience.';
+        document.getElementById('values-title').textContent = 'Our Values';
+        document.getElementById('value1').textContent = 'High quality in every product';
+        document.getElementById('value2').textContent = 'Use of natural and fresh ingredients';
+        document.getElementById('value3').textContent = 'Providing a warm and cozy experience for customers';
+
+        document.getElementById('nav-home').textContent = 'Home';
+        document.getElementById('nav-menu').textContent = 'Menu'; 
+        document.getElementById('nav-about').textContent = 'About Us';
+        document.getElementById('nav-contact').textContent = 'Contact';
+      }
+    }
+    function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">CinnAmora</a></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="menu.html" id="nav-menu">Menu</a></li>
+        <li><a href="about.html" id="nav-about" class="active">About Us</a></li>
+        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+      <button id="lang-toggle" onclick="toggleLanguage()">العربية</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <section id="brand-story">
+        <h2 id="brand-story-title">Brand Story</h2>
+        <p id="brand-story-text">
+          CinnAmora is a brand specializing in cinnamon rolls and cozy desserts, blending traditional flavors with a
+          modern touch to offer a unique experience.
+        </p>
+      </section>
+
+      <section id="values">
+        <h2 id="values-title">Our Values</h2>
+        <ul>
+          <li id="value1">High quality in every product</li>
+          <li id="value2">Use of natural and fresh ingredients</li>
+          <li id="value3">Providing a warm and cozy experience for customers</li>
+        </ul>
+      </section>
+
+      <section id="images">
+        <img src="images/cinnamora.jpg" alt="CinnAmora Storefront" />
+      </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CinnAmora. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
